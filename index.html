@@ -10,7 +10,6 @@
             rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/null.css">
-        <link rel="stylesheet" href="./styles/core.css">
         <title>EClipse</title>
     </head>
 
@@ -19,17 +18,25 @@
             <div class="header__nav">
                 <img class="header__logo" src="./images/LOGO.png" alt="logo">
                 <div class="header__btns">
-                    <button class="header__btn navBtn" data-redirectto="main">Buy crypto</button>
-                    <button class="header__btn navBtn" data-redirectto="market">Market</button>
+                    <button class="header__btn navBtn">
+                        <p>Buy crypto</p>
+                    </button>
+                    <button class="header__btn navBtn">
+                        <p>Market</p>
+                    </button>
                 </div>
             </div>
             <div class="header__registration ">
-                <button class="header__btn header__login navBtn" data-redirectto="login">Login</button>
-                <button class="header__btn header__register navBtn" data-redirectto="register">Register</button>
+                <button class="header__btn header__login navBtn">
+                    <p>Login</p>
+                </button>
+                <button class="header__btn header__register navBtn">
+                    <p>Register</p>
+                </button>
             </div>
         </header>
 
-        <div class="screen__main page" id="main">
+        <div class="screen__main page">
             <div class="start">
                 <div class="container">
                     <div class="start__intro">
@@ -159,7 +166,7 @@
             </div>
         </div>
 
-        <div class="market__body page" id="market">
+        <div class="market__body page">
             <div class="container">
                 <div class="market-box">
                     <div class="market__filters">
@@ -179,17 +186,17 @@
                             <p>Капіталізація</p>
                         </div>
                     </div>
-                    <div class="market__cryptos" id="cryptos-wrapper">
+                    <div class="market__cryptos">
                         <div class="market__crypto">
                             <div class="market__crypto__category name">
-                                <img src="./images/crypto/bitcoin.png" alt="bitcoin">
-                                <p class="market__short">BTC</p>
-                                <p class="market__long">Bitcoin</p>
+                                <img src="./images/Cryptocurrencies/bitcoin.png" alt="bitcoin">
+                                <p class="market__shortname">BTC</p>
+                                <p class="market__longname">Bitcoin</p>
                             </div>
                             <div class="market__crypto__category price">
                                 <p>$20000</p>
                             </div>
-                            <div class="market__crypto__category change">
+                            <div class="market__crypto__category change green">
                                 <p>+0.63%</p>
                             </div>
                             <div class="market__crypto__category amount">
@@ -197,6 +204,177 @@
                             </div>
                             <div class="market__crypto__category capitaliztion">
                                 <p>$388 400M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/ethereum.png" alt="bitcoin">
+                                <p class="market__shortname">ETH</p>
+                                <p class="market__longname">Ethereum</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$1 500</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+1.45%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>12 354M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$147 402M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/usdt.png" alt="bitcoin">
+                                <p class="market__shortname">USDT</p>
+                                <p class="market__longname">TetherUS</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$1</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+0.00%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>37 190M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$66 867M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/bnb.png" alt="bitcoin">
+                                <p class="market__shortname">BNB</p>
+                                <p class="market__longname">BNB</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$238</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+2.04%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>831,51M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$38 859M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/ripple.png" alt="bitcoin">
+                                <p class="market__shortname">XPR</p>
+                                <p class="market__longname">Ripple</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$0,3632</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+0.61%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>809,80M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$17 553M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/cardano.png" alt="bitcoin">
+                                <p class="market__shortname">ADA</p>
+                                <p class="market__longname">Cardano</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$0,50</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+3.80%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>803,01M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$17 045M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/solana.png" alt="bitcoin">
+                                <p class="market__shortname">SOL</p>
+                                <p class="market__longname">Solana</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$40,21</p>
+                            </div>
+                            <div class="market__crypto__category change red">
+                                <p>-0.52%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>1 122,01M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$13 779M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/dogecoin.png" alt="bitcoin">
+                                <p class="market__shortname">DOGE</p>
+                                <p class="market__longname">Dogecoin</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$0,07312</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+10.80%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>645,03M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$9 710M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/polkadot.png" alt="bitcoin">
+                                <p class="market__shortname">DOT</p>
+                                <p class="market__longname">Polkadot</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$8,06</p>
+                            </div>
+                            <div class="market__crypto__category change green">
+                                <p>+1.26%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>361,78M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$7 950M</p>
+                            </div>
+                        </div>
+                        <div class="market__crypto">
+                            <div class="market__crypto__category name">
+                                <img src="./images/Cryptocurrencies/tron.png" alt="bitcoin">
+                                <p class="market__shortname">TRX</p>
+                                <p class="market__longname">Tron</p>
+                            </div>
+                            <div class="market__crypto__category price">
+                                <p>$0,06408</p>
+                            </div>
+                            <div class="market__crypto__category change red">
+                                <p>-0.06%</p>
+                            </div>
+                            <div class="market__crypto__category amount">
+                                <p>402,44M</p>
+                            </div>
+                            <div class="market__crypto__category capitaliztion">
+                                <p>$5 939M</p>
                             </div>
                         </div>
                     </div>
@@ -207,10 +385,10 @@
             </div>
         </div>
 
-        <div class="register page" id="register">
+        <div class="register page">
         </div>
 
-        <div class="login page" id="login">
+        <div class="login page">
         </div>
 
         <footer>
