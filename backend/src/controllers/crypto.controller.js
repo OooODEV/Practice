@@ -7,7 +7,7 @@ router.get('/crypto', async (req, res, next) => {
     try {
         const cryptos = await CryptoModel.find();
 
-        res.json(cryptos)
+        res.json({ cryptos });
     } catch (error) {
         res.status(500).send({ error: "Internal Server Error" });
     }
