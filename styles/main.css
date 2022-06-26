@@ -412,7 +412,8 @@ footer{
     width: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 60px;
     text-align: center;
 }
 
@@ -432,13 +433,32 @@ footer{
     height: 64px;
     display: flex;
     flex-direction: row;
-    border-bottom: #fff 1px;
+    border-bottom: solid #fff 1px;
 }
 
 .market__crypto__category{
     width: 240px;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    padding-left: 60px;
+}
+
+.market__shortname{
+    margin: 0px 20px;
+    font-size: 16px;
+}
+
+.market__longname{
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.green p{
+    color: #00ED26;
+}
+
+.red p{
+    color: red;
 }
