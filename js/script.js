@@ -137,3 +137,31 @@ const initPages = () => {
 }
 
 initPages();
+
+const registerBtn = document.getElementById('submit-register');
+const loginBtn = document.getElementById('submit-login');
+
+loginBtn.getElementsByTagName
+
+registerBtn.addEventListener('click', async (e) => {
+    const registerForm = document.getElementById('register-form');
+    const creds = getFormValues(registerForm);
+
+    fetch('http://localhost:8080/api/user/register', {
+        method: 'POST',
+        body: JSON.stringify(creds),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.json())
+        .then(console.log)
+        .catch(console.error)
+})
+
+const getFormValues = form => {
+    const inputs = Array.from(form.getElementsByTagName('input'));
+    return inputs.reduce((acc, input) => {
+        acc[input.name] = input.value;
+        return acc
+    }, {})
+} 
