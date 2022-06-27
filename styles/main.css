@@ -455,10 +455,10 @@ footer{
     opacity: 0.5;
 }
 
-.green p{
+.green {
     color: #00ED26;
 }
 
-.red p{
+.red {
     color: red;
 }

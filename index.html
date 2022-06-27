@@ -10,6 +10,7 @@
             rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/null.css">
+        <link rel="stylesheet" href="./styles/core.css">
         <title>EClipse</title>
     </head>
 
@@ -18,25 +19,17 @@
             <div class="header__nav">
                 <img class="header__logo" src="./images/LOGO.png" alt="logo">
                 <div class="header__btns">
-                    <button class="header__btn navBtn">
-                        <p>Buy crypto</p>
-                    </button>
-                    <button class="header__btn navBtn">
-                        <p>Market</p>
-                    </button>
+                    <button class="header__btn navBtn" data-redirectto="main">Buy crypto</button>
+                    <button class="header__btn navBtn" data-redirectto="market">Market</button>
                 </div>
             </div>
             <div class="header__registration ">
-                <button class="header__btn header__login navBtn">
-                    <p>Login</p>
-                </button>
-                <button class="header__btn header__register navBtn">
-                    <p>Register</p>
-                </button>
+                <button class="header__btn header__login navBtn" data-redirectto="login">Login</button>
+                <button class="header__btn header__register navBtn" data-redirectto="register">Register</button>
             </div>
         </header>
 
-        <div class="screen__main page">
+        <div class="screen__main page" id="main">
             <div class="start">
                 <div class="container">
                     <div class="start__intro">
@@ -166,7 +159,7 @@
             </div>
         </div>
 
-        <div class="market__body page">
+        <div class="market__body page" id="market">
             <div class="container">
                 <div class="market-box">
                     <div class="market__filters">
@@ -186,7 +179,7 @@
                             <p>Капіталізація</p>
                         </div>
                     </div>
-                    <div class="market__cryptos">
+                    <div class="market__cryptos" id="cryptos-wrapper">
                         <div class="market__crypto">
                             <div class="market__crypto__category name">
                                 <img src="./images/crypto/bitcoin.png" alt="bitcoin">
@@ -385,10 +378,10 @@
             </div>
         </div>
 
-        <div class="register page">
+        <div class="register page" id="register">
         </div>
 
-        <div class="login page">
+        <div class="login page" id="login">
         </div>
 
         <footer>

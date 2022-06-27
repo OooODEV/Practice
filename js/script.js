@@ -8,6 +8,10 @@ navButtons.forEach(btn => {
 const navigationChanged = (e) => {
     const redirectPageId = e.target.dataset.redirectto;
 
+    console.warn(redirectPageId);
+
+    console.warn(pages);
+
     pages.forEach(page => {
         if (page.id !== redirectPageId) {
             page.classList.add('hidden');
@@ -38,9 +42,11 @@ const getCryptos = () => {
                 //                                              Implement shortname in db if needed or delete 2 line below
 
                 const shortName = document.createElement('p');
+                shortName.classList.add('market__shortname');
                 shortName.textContent = crypto.shortName;
 
                 const longName = document.createElement('p');
+                longName.classList.add('market__longname');
                 longName.textContent = crypto.name;
 
                 name.appendChild(logo);
@@ -68,7 +74,16 @@ const getCryptos = () => {
 
                 const changeWrapper = document.createElement('div');
                 changeWrapper.classList.add('market__crypto__category');
+                changeWrapper.classList.add('change');
                 const change = document.createElement('p');
+
+                if (crypto.change.includes('+')) {
+                    change.classList.add('green');
+                }
+                if (crypto.change.includes('-')) {
+                    change.classList.add('red');
+                }
+
                 change.textContent = crypto.change;
 
                 changeWrapper.appendChild(change);
@@ -113,7 +128,7 @@ getCryptos()
 
 const initPages = () => {
     pages.forEach(page => {
-        if (page.id !== 'market') {
+        if (page.id !== 'main') {
             page.classList.add('hidden');
         } else {
             page.classList.remove('hidden');
