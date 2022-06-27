@@ -137,13 +137,26 @@ initPages();
 const registerBtn = document.getElementById('submit-register');
 const loginBtn = document.getElementById('submit-login');
 
-loginBtn.getElementsByTagName
-
 registerBtn.addEventListener('click', async (e) => {
     const registerForm = document.getElementById('register-form');
     const creds = getFormValues(registerForm);
 
     fetch('http://localhost:8080/api/user/register', {
+        method: 'POST',
+        body: JSON.stringify(creds),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.json())
+        .then(console.log)
+        .catch(console.error)
+})
+
+loginBtn.addEventListener('click', async (e) => {
+    const loginForm = document.getElementById('login-form');
+    const creds = getFormValues(loginForm);
+
+    fetch('http://localhost:8080/api/user/login', {
         method: 'POST',
         body: JSON.stringify(creds),
         headers: {

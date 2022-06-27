@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post('/register', async (req, res) => {
     try {
-        const { email, password } = req.body
+        const { email, password, name } = req.body
 
         const doesUserExists = await UserModel.findOne({ email })
         if (doesUserExists) {
@@ -15,10 +15,11 @@ router.post('/register', async (req, res) => {
 
         await UserModel.create({
             email,
+            name,
             password: await bcrypt.hash(password, 10),
         })
 
-        res.json({ message: 'User created successfuly' })
+        res.json({ message: 'User created successfuly', name})
     } catch (error) {
         res.status(400).send({ message: error.message })
     }
@@ -33,7 +34,7 @@ router.post('/login', async (req, res) => {
             return res.status(400).send({ message: 'Invalid email or password!' })
         }
 
-        res.json({ message: 'Successfuly logged in' })
+        res.json({ message: 'Successfuly logged in', name: user.name})
     } catch (error) {
         res.status(400).send({ message: error.message })
     }
