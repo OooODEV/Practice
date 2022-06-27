@@ -8,10 +8,6 @@ navButtons.forEach(btn => {
 const navigationChanged = (e) => {
     const redirectPageId = e.target.dataset.redirectto;
 
-    console.warn(redirectPageId);
-
-    console.warn(pages);
-
     pages.forEach(page => {
         if (page.id !== redirectPageId) {
             page.classList.add('hidden');
@@ -47,7 +43,7 @@ const getCryptos = () => {
 
                 const longName = document.createElement('p');
                 longName.classList.add('market__longname');
-                longName.textContent = crypto.longName;
+                longName.textContent = crypto.longname;
 
                 name.appendChild(logo);
                 name.appendChild(shortName);
