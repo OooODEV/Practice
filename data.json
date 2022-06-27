@@ -1,12 +1,14 @@
 {
-    "Bitcoin": {
-        "price": "$20 000.00",
+    "BTC": {
+        "longname": "Bitcoin",
+        "price": "$20,000.00",
         "change": "+0.63%",
         "amount": "28 955M",
         "capitalization": "$388 400M",
         "path": "images/crypto/bitcoin.png"
     },
     "ETH": {
+        "longname": "Ethereum",
         "price": "$1 500",
         "change": "+1.45%",
         "amount": "12 354M",
@@ -14,6 +16,7 @@
         "path": "images/crypto/ethereum.png"
     },
     "USDT": {
+        "longname": "TetherUS",
         "price": "$1",
         "change": "+0.00%",
         "amount": "37 190M",
@@ -21,6 +24,7 @@
         "path": "images/crypto/usdt.png"
     },
     "BNB": {
+        "longname": "BNB",
         "price": "$238",
         "change": "+2.04%",
         "amount": "831,51M",
@@ -28,6 +32,7 @@
         "path": "images/crypto/bnb.png"
     },
     "XPR": {
+        "longname": "Ripple",
         "price": "$0,3632",
         "change": "+0.61%",
         "amount": "809,80M",
@@ -35,6 +40,7 @@
         "path": "images/crypto/ripple.png"
     },
     "ADA": {
+        "longname": "Cardano",
         "price": "$0,50",
         "change": "+3.80%",
         "amount": "803,01M",
@@ -42,6 +48,7 @@
         "path": "images/crypto/cardano.png"
     },
     "SOL": {
+        "longname": "Solana",
         "price": "$40,21",
         "change": "-0.52%",
         "amount": "1 122,01M",
@@ -49,6 +56,7 @@
         "path": "images/crypto/solana.png"
     },
     "DOGE": {
+        "longname": "Dogecoin",
         "price": "$0,07312",
         "change": "+10.80%",
         "amount": "645,03M",
@@ -56,6 +64,7 @@
         "path": "images/crypto/dogecoin.png"
     },
     "DOT": {
+        "longname": "Polkadot",
         "price": "$8,06",
         "change": "+1.26%",
         "amount": "361,78M",
@@ -63,6 +72,7 @@
         "path": "images/crypto/polkadot.png"
     },
     "TRX": {
+        "longname": "Tron",
         "price": "$0,06408",
         "change": "-0.06%",
         "amount": "402,44M",
