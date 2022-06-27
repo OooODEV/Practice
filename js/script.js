@@ -43,11 +43,11 @@ const getCryptos = () => {
 
                 const shortName = document.createElement('p');
                 shortName.classList.add('market__shortname');
-                shortName.textContent = crypto.shortName;
+                shortName.textContent = crypto.name;
 
                 const longName = document.createElement('p');
                 longName.classList.add('market__longname');
-                longName.textContent = crypto.name;
+                longName.textContent = crypto.longName;
 
                 name.appendChild(logo);
                 name.appendChild(shortName);
